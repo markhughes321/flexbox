@@ -1,10 +1,3 @@
-:root {
-  --page-1-color: steelblue;
-  --page-2-color: tan;
-  --page-3-color: teal;
-  --page-4-color: slateblue;
-  --animate-speed: 2s; }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
@@ -15,16 +8,16 @@ body {
 
 /* Page Colors */
 #page-1 {
-  background: var(--page-1-color); }
+  background: #ef6b65; }
 
 #page-2 {
-  background: var(--page-2-color); }
+  background: #fadae0; }
 
 #page-3 {
-  background: var(--page-3-color); }
+  background: #1b2447; }
 
 #page-4 {
-  background: var(--page-4-color); }
+  background: #d43d49; }
 
 .page {
   display: flex;
@@ -32,16 +25,16 @@ body {
   height: calc(var(--vh, 1vh) * 100);
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 0 4rem; }
+  padding: 1rem; }
 
-.page h1 {
-  font-size: 4rem;
+.page h2 {
+  font-size: 2rem;
   line-height: 1.2;
   margin: 1rem; }
 
 .page p {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin: 1rem; }
 
 .btn {
   display: inline-block;
