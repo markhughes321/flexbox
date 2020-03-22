@@ -29,7 +29,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -62,21 +62,3 @@ body {
 .btn-dark:hover {
   background: #f4f4f4;
   color: #333; }
-
-/* Page Animation */
-#page-1 h1 {
-  transform: translateY(-1200px);
-  animation: heading var(--animate-speed) forwards ease-in; }
-
-#page-1 p {
-  transform: translateX(-1800px);
-  animation: text var(--animate-speed) forwards ease-in 1s; }
-
-/* Keyframes */
-@keyframes heading {
-  to {
-    transform: translateY(0); } }
-
-@keyframes text {
-  to {
-    transform: translateX(0); } }
