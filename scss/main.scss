@@ -11,11 +11,9 @@ body {
 
 .grid {
     display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: calc(var(--vh, 1vh) * 100);
-    margin: 0 auto;
 }
 
 .about {
