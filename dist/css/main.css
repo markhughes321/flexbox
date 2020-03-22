@@ -3,7 +3,8 @@
   padding: 0; }
 
 body {
-  background: #ef6b65; }
+  background: #ef6b65;
+  overflow: hidden; }
 
 .grid {
   display: grid;
