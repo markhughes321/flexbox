@@ -1,4 +1,5 @@
-@import 'variables';
+@import 'colors';
+@import 'fonts';
 
 * {
     margin: 0;
@@ -18,7 +19,8 @@ body {
 }
 
 .about {
-    padding: 1rem;
+    font-family: 'Gotham Medium';
+    padding: 2rem;
     border: #ccc 1px solid;
     text-align: left;
 }

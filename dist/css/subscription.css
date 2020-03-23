@@ -1,7 +1,21 @@
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(../fonts/GothamBold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../fonts/GothamBook.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url(../fonts/GothamLight.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(../fonts/GothamMedium.ttf) format("truetype"); }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
-  color: #fff;
   overflow: hidden; }
 
 /* Page Colors */
@@ -24,6 +38,7 @@ body {
   padding: 1rem; }
 
 .page h2 {
+  font-family: Gotham Medium;
   font-size: 2rem;
   line-height: 1.2; }
 

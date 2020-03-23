@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(../fonts/GothamBold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../fonts/GothamBook.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url(../fonts/GothamLight.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(../fonts/GothamMedium.ttf) format("truetype"); }
+
 * {
   margin: 0;
   padding: 0; }
@@ -13,7 +29,8 @@ body {
   height: calc(var(--vh, 1vh) * 100); }
 
 .about {
-  padding: 1rem;
+  font-family: 'Gotham Medium';
+  padding: 2rem;
   border: #ccc 1px solid;
   text-align: left; }
 
