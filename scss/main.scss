@@ -50,7 +50,7 @@ body {
     border: #ccc 1px solid;
     text-align: right;
     transform: translateX(1200px);
-    animation: heading var(--animate-speed) forwards ease-in;
+    animation: a var(--animate-speed) forwards ease-in;
 }
 
 .menu {
@@ -80,10 +80,18 @@ body {
     animation: heading var(--animate-speed) forwards ease-in;
 }
 
-  /* Keyframes */
-  @keyframes heading {
+/* Keyframes */
+@keyframes heading {
     to {
       transform: translateY(0);
       transform: translateX(0);
     }
-  }
+}
+
+/* Keyframes */
+@keyframes a {
+    to {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+} 
