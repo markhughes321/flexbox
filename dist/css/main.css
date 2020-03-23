@@ -14,11 +14,21 @@
   font-family: 'Gotham Medium';
   src: url(../fonts/GothamMedium.ttf) format("truetype"); }
 
+:root {
+  --animate-speed: 1s; }
+
 * {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 body {
+  font-family: 'Gotham Medium';
+  font-size: 1rem;
+  text-transform: uppercase;
   background: #ef6b65;
   overflow: hidden; }
 
@@ -29,36 +39,48 @@ body {
   height: calc(var(--vh, 1vh) * 100); }
 
 .about {
-  font-family: 'Gotham Medium';
-  padding: 2rem;
+  padding: 1rem;
   border: #ccc 1px solid;
-  text-align: left; }
+  text-align: left;
+  transform: translateX(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in; }
 
 .icon {
-  padding: .5rem;
+  padding: .2rem;
   text-align: center; }
 
 .coffeeSubscription {
   padding: 1rem;
   border: #ccc 1px solid;
-  text-align: right; }
+  text-align: right;
+  transform: translateX(1200px);
+  animation: heading var(--animate-speed) forwards ease-in; }
 
 .menu {
   padding: 1rem;
-  border: #ccc 1px solid;
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+  transform: translateX(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in; }
 
 .signUp {
   padding: 1rem;
   border: #ccc 1px solid;
   display: flex;
   align-items: flex-end;
-  justify-content: center; }
+  justify-content: center;
+  transform: translateY(1200px);
+  animation: heading var(--animate-speed) forwards ease-in; }
 
 .brewTools {
   padding: 1rem;
-  border: #ccc 1px solid;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  transform: translateX(1200px);
+  animation: heading var(--animate-speed) forwards ease-in; }
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translateY(0); } }
