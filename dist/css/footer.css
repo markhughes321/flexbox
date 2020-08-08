@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url(../fonts/GothamBold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../fonts/GothamBook.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url(../fonts/GothamLight.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(../fonts/GothamMedium.ttf) format("truetype"); }
+
+#signUpContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
+#signUpButton {
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+  cursor: pointer; }
+
+#footerSlideContent {
+  width: 100%;
+  height: 0;
+  background: #1b2447;
+  color: #CCCCCC;
+  font-size: 0.8em;
+  border: none;
+  justify-content: center; }
+
+#emailInput {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: .2rem;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2rem; }
+
+#emailInput::placeholder {
+  color: #fadae0; }
+
+#emailInput:focus {
+  opacity: .5;
+  transition: 0.7s; }
+
+#socialIconList {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+#socialIconList i {
+  padding: 1rem;
+  font-size: 1.5rem;
+  transition: 0.7s; }
+
+#socialIconList i:hover {
+  color: #ef6b65; }

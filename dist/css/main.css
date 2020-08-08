@@ -26,11 +26,11 @@ a {
   color: inherit; }
 
 body {
-  font-family: 'Gotham Medium';
   font-size: 1rem;
   text-transform: uppercase;
   background: #ef6b65;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
 
 .grid {
   display: grid;
@@ -38,32 +38,32 @@ body {
   grid-template-rows: repeat(2, 1fr);
   height: calc(var(--vh, 1vh) * 100); }
 
-.about {
+.aboutContainer {
   padding: 1rem;
   border: #ccc 1px solid;
   text-align: left;
   transform: translateX(-1200px);
   animation: heading var(--animate-speed) forwards ease-in; }
 
-.icon {
+.iconContainer {
   padding: .2rem;
   text-align: center; }
 
-.coffeeSubscription {
+.subscriptionContainer {
   padding: 1rem;
   border: #ccc 1px solid;
   text-align: right;
   transform: translateX(1200px);
-  animation: heading var(--animate-speed) forwards ease-in; }
+  animation: a var(--animate-speed) forwards ease-in; }
 
-.menu {
+.menuContainer {
   padding: 1rem;
   display: flex;
   align-items: flex-end;
   transform: translateX(-1200px);
   animation: heading var(--animate-speed) forwards ease-in; }
 
-.signUp {
+.signUpContainer {
   padding: 1rem;
   border: #ccc 1px solid;
   display: flex;
@@ -72,7 +72,7 @@ body {
   transform: translateY(1200px);
   animation: heading var(--animate-speed) forwards ease-in; }
 
-.brewTools {
+.brewToolsContainer {
   padding: 1rem;
   display: flex;
   align-items: flex-end;
@@ -82,6 +82,12 @@ body {
 
 /* Keyframes */
 @keyframes heading {
+  to {
+    transform: translateY(0);
+    transform: translateX(0); } }
+
+/* Keyframes */
+@keyframes a {
   to {
     transform: translateY(0);
     transform: translateX(0); } }
